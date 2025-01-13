@@ -221,6 +221,11 @@ main {
     color: white;
 }
 
+.course-button.completed {
+    background-color: #4CAF50; 
+    color: white;
+}
+
 footer {
     background-color: #274a64;
     color: white;
