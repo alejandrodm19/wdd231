@@ -1,0 +1,269 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 50px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+nav a.active {
+    background-color: #007BFF;
+    color: white;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.view-toggle {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.view-toggle button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.view-toggle button.active {
+    background-color: #555;
+}
+
+.view-toggle button:hover {
+    background-color: #444;
+}
+
+.members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.member-card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.member-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.member-card h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.member-card p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.member-card a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #0073e6;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.member-card a:hover {
+    background-color: #005bb5;
+}
+
+#members-container {
+  display: grid;
+  gap: 20px;
+}
+
+.grid-view {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.list-view {
+  grid-template-columns: 1fr;
+}
+
+.member-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.member-card img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.member-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.members.list-view {
+    display: block;
+}
+
+.member-card.list-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.member-card.list-item img {
+    max-width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.member-card.list-item div {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.member-card.list-item a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.member-card.list-item a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer p a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+footer .social-icons img {
+    width: 30px; /* Adjust the size as needed */
+    height: auto;
+    margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .view-toggle {
+        justify-content: center;
+    }
+
+    .member-card.list-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .member-card.list-item img {
+        max-width: 80%;
+    }
+}

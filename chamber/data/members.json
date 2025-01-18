@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Farmatodo",
+    "address": "Moran Avenue, Street 9",
+    "phone": "+58 251-2521397",
+    "website": "https://www.farmatodo.com.ve/",
+    "image": "farmatodo-logo.webp",
+    "membership": 3
+  },
+  {
+    "name": "Saas",
+    "address": "Vargas Avenue, Street 31 and 32",
+    "phone": "+58 424-5276962",
+    "website": "https://www.farmaciasaas.com/",
+    "image": "saas-logo.webp",
+    "membership": 2
+  },
+  {
+    "name": "Nuevo Siglo",
+    "address": "Street 20, Avenue 16",
+    "phone": "+58 251-2322275",
+    "website": "https://www.farmaciasnuevosiglo.com/",
+    "image": "nuevo-siglo-logo.webp",
+    "membership": 2
+  },
+  {
+    "name": "BEL",
+    "address": "Leones Avenue, Bel Tower",
+    "phone": "+58 424-5552222",
+    "website": "https://corporacionbel.com/",
+    "image": "bel-logo.webp",
+    "membership": 2
+  },
+  {
+    "name": "JAC Automotors",
+    "address": "Bel Tower",
+    "phone": "+58 414-2100000",
+    "website": "https://jacvenezuela.com/concesionarios/",
+    "image": "jac-logo.webp",
+    "membership": 2
+  },
+  {
+    "name": "Sambil",
+    "address": "Venezuela Avenue",
+    "phone": "+58 424-1808317",
+    "website": "https://www.sambilbarquisimeto.com/",
+    "image": "sambil-logo.webp",
+    "membership": 2
+  },
+  {
+    "name": "Trinitarias",
+    "address": "Libertador Avenue",
+    "phone": "+58 251 254 5050",
+    "website": "http://cclastrinitarias.com/",
+    "image": "trinitarias-logo.webp",
+    "membership": 2
+  }
+]

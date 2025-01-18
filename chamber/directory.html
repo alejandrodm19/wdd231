@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alejandro Malvacias">
+    <meta name="description" content="Directory page for the local Chamber of Commerce. Browse member companies and their information.">
+    <meta property="og:title" content="Chamber of Commerce - Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/your-favicon.png">
+    <meta property="og:url" content="https://yourwebsite.com/directory.html">
+    <title>Directory - Chamber of Commerce</title>
+    <link rel="icon" href="images/logo.webp" type="image/png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.webp" alt="Chamber of Commerce Logo">
+            <h1>Barquisimeto Chamber of Commerce</h1>
+        </div>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="view-buttons">
+            <button id="grid-view">Grid View</button>
+            <button id="list-view">List View</button>
+        </section>
+        <section id="members-container" class="grid-view">
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Barquisimeto Chamber of Commerce</p>
+            <p>Vargas Avenue, street 18, Barquisimeto Venezuela</p>
+            <p>Email: info@barquisimeto.org | Phone: (251) 555-2300</p>
+            <p>WDD 231 Chamber Project | Last Modified: <span id="lastModified"></span></p>
+            <p>&copy; <span id="year"></span></p>
+
+            <div class="social-icons">
+                <a href="#"><img src="images/facebook-logo.webp" alt="Facebook"></a>
+                <a href="#"><img src="images/youtube-logo.webp" alt="YouTube"></a>
+                <a href="#"><img src="images/linkedin-logo.webp" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/menu.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</body>
+</html>
