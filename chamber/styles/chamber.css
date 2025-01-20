@@ -88,6 +88,31 @@ main {
     background-color: #444;
 }
 
+.view-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.view-buttons button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.view-buttons button.active {
+    background-color: #555;
+}
+
+.view-buttons button:hover {
+    background-color: #444;
+}
+
 .members {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -169,42 +194,58 @@ main {
 }
 
 .members.list-view {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .member-card.list-item {
     display: flex;
     align-items: center;
     gap: 15px;
-    text-align: left;
-    padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #ddd;
     border-radius: 5px;
+    padding: 10px;
     background-color: #fff;
-    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .member-card.list-item img {
-    max-width: 50px;
-    height: 50px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
-    flex-shrink: 0;
-    margin-right: 20px;
+    object-fit: cover;
 }
 
 .member-card.list-item div {
     flex-grow: 1;
-    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.member-card.list-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.member-card.list-item p {
+    margin: 5px 0;
+    font-size: 0.9rem;
 }
 
 .member-card.list-item a {
-    color: #0073e6;
+    padding: 5px 10px;
+    color: white;
+    background-color: #0073e6;
     text-decoration: none;
-    font-weight: bold;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    text-align: center;
 }
 
 .member-card.list-item a:hover {
-    text-decoration: underline;
+    background-color: #005bb5;
 }
 
 footer {
@@ -229,7 +270,7 @@ footer p a:hover {
 }
 
 footer .social-icons img {
-    width: 30px; /* Adjust the size as needed */
+    width: 30px; 
     height: auto;
     margin: 0 10px;
 }
