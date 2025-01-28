@@ -281,6 +281,11 @@ footer .social-icons img {
     position: relative;
     text-align: center;
     margin-bottom: 20px;
+    background-color: #ddd;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero img {
@@ -307,11 +312,6 @@ footer .social-icons img {
     margin: 0;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    margin: 10px 0;
-}
-
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
@@ -326,64 +326,99 @@ footer .social-icons img {
     background-color: #005bb5;
 }
 
-/* Weather Section */
-.weather {
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.weather h2 {
-    margin-bottom: 15px;
-}
-
-#weather-info {
-    font-size: 1.1rem;
-}
-
-/* News Section */
-.news {
+/* Weather & Events Section */
+.dashboard {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     margin-bottom: 20px;
 }
 
-.news article {
+.section-title {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.events, .weather, .forecast {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather h2, .forecast h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#weather-info, #forecast-info {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.forecast p {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Business Members */
+.business-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.business-card {
     background-color: white;
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.news h3 {
-    margin: 0 0 10px;
-    color: #333;
+.business-card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 
-.news p {
-    margin: 0;
+.business-card h3 {
+    margin-bottom: 10px;
+}
+
+.business-card p {
+    font-size: 0.9rem;
     color: #666;
 }
 
+/* CTA Section */
 .cta {
     text-align: center;
-    background-color: #f8f8f8;
-    padding: 20px;
+    padding: 30px;
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid #ccc;
     border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-.cta h2 {
-    margin: 0 0 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .cta p {
-    margin: 0 0 15px;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        grid-template-columns: 1fr;
+    }
+    .business-container {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 768px) {
