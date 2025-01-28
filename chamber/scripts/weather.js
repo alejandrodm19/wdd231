@@ -1,4 +1,4 @@
-const apiKey = "762a08b6ec8721e3086dbdb22e9008e9"; 
+const apiKey = "762a08b6ec8721e3086dbdb22e9008e9";
 const city = "Barquisimeto";
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
 const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;

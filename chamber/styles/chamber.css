@@ -275,8 +275,6 @@ footer .social-icons img {
     margin: 0 10px;
 }
 
-/* Home Page */
-/* Hero Section */
 .hero {
     position: relative;
     text-align: center;
@@ -326,7 +324,6 @@ footer .social-icons img {
     background-color: #005bb5;
 }
 
-/* Weather & Events Section */
 .dashboard {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -365,7 +362,6 @@ footer .social-icons img {
     text-align: center;
 }
 
-/* Business Members */
 .business-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -396,6 +392,65 @@ footer .social-icons img {
     font-size: 0.9rem;
     color: #666;
 }
+
+.business-card a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #0073e6;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.business-card a:hover {
+    background-color: #005bb5;
+}
+
+.spotlight-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 250px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spotlight-img {
+    width: 120px;  
+    height: 120px;
+    object-fit: contain;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.spotlight-btn {
+    background-color: #0073e6;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.spotlight-btn:hover {
+    background-color: #005bb5;
+}
+
+#spotlight-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 
 /* CTA Section */
 .cta {
