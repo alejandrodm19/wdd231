@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Alejandro Malvacias">
-    <meta name="description" content="Directory page for the local Chamber of Commerce. Browse member companies and their information.">
-    <meta property="og:title" content="Chamber of Commerce - Directory">
+    <meta name="description" content="Home page for the Barquisimeto Chamber of Commerce. Discover local businesses, events, and weather updates.">
+    <meta property="og:title" content="Barquisimeto Chamber of Commerce - Home">
     <meta property="og:type" content="website">
     <meta property="og:image" content="images/logo.webp">
-    <meta property="og:url" content="https://alejandrodm19.github.io/wdd231/chamber/directory.html">
-    <title>Directory - Chamber of Commerce</title>
+    <meta property="og:url" content="https://alejandrodm19.github.io/wdd231/chamber/index.html">
+    <title>Home - Barquisimeto Chamber of Commerce</title>
     <link rel="icon" href="images/logo.webp" type="image/png">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber.css">
@@ -26,7 +26,7 @@
             <div></div>
         </div>
         <nav>
-            <a href="index.html">Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="directory.html">Directory</a>
             <a href="#">Join</a>
             <a href="#">Discover</a>
@@ -34,11 +34,41 @@
     </header>
 
     <main>
-        <section class="view-buttons">
-            <button id="grid-view" class="active">🔳Grid</button>
-            <button id="list-view">📃List</button>
+        <section class="hero">
+            <img src="images/hero-image.webp" alt="Barquisimeto City View">
+            <div class="hero-content">
+                <h2>Welcome to Barquisimeto</h2>
+                <p>Your gateway to business opportunities and community growth.</p>
+                <a href="#" class="cta-button">Join Us</a>
+            </div>
         </section>
-        <section id="members-container" class="grid-view">
+
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Current Weather</h2>
+            <div id="weather-info">
+                <p>Loading weather data...</p>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section class="news">
+            <h2>Latest News</h2>
+            <article>
+                <h3>New Business Initiative</h3>
+                <p>Discover how local businesses are thriving with our new support programs.</p>
+            </article>
+            <article>
+                <h3>Upcoming Events</h3>
+                <p>Join us for the annual Barquisimeto Business Expo on November 15th.</p>
+            </article>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta">
+            <h2>Join the Chamber</h2>
+            <p>Become a member and enjoy exclusive benefits for your business.</p>
+            <a href="#" class="cta-button">Sign Up Now</a>
         </section>
     </main>
 
@@ -60,6 +90,6 @@
 
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/menu.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
 </body>
 </html>
