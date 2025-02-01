@@ -550,7 +550,7 @@ input[type="submit"]:hover {
 
 .membership-card button {
     background-color: #007BFF;
-    color: white;
+    color: rgb(8, 7, 7);
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -560,6 +560,8 @@ input[type="submit"]:hover {
 .membership-card button:hover {
     background-color: #0056b3;
 }
+
+
 
 /* Responsive Design */
 @media (min-width: 768px) {
@@ -615,6 +617,8 @@ input[type="submit"]:hover {
 .close-button:hover {
     color: red;
 }
+
+
 
 
 @media (max-width: 768px) {
