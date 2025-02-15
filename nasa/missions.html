@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore NASA's latest technology transfer patents and software.">
+    <meta name="author" content="Alejandro Malvacias">
+    <meta property="og:title" content="NASA TechTransfer">
+    <meta property="og:description" content="Discover NASA's latest patents, software, and technology innovations.">
+    <meta property="og:image" content="images/logo.webp">
+    <meta property="og:url" content="https://alejandrodm19.github.io/wdd231/nasa/techtransfer.html">
+    <link rel="icon" href="images/logo.webp" type="image/webp">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/nasa-site.css">
+    <title>NASA TechTransfer</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.webp" alt="NASA Logo">
+            <h1>Nasa Explorations</h1>
+        </div>
+
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <nav>
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="missions.html">Missions</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Search..." aria-label="Search">
+                <button type="submit">🔍</button>
+            </div>
+        </nav>
+    </header>
+    
+        <main>
+            <section class="asteroids-container">
+                <h2>Near-Earth Asteroids</h2>
+                <p>Explore the latest near-Earth asteroids and their approach details.</p>
+                <div id="asteroids-list">
+                    <p>Loading asteroid data...</p>
+                </div>
+            </section>
+        </main>
+
+    <footer>
+        <p>&copy; 2025 NASA Explorations | By: Alejandro Malvacias</p>
+    </footer>
+    
+    <script src="scripts/asteroids.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+</body>
+</html>
